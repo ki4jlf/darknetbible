@@ -1,0 +1,23 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+
+.tailsbanner {
+	background: #56347c;
+	margin-inline-end: 0px;
+	margin-inline-start: 0px;
+
+	img {
+		margin-inline-start: 30px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+}
+
+.borderimage {
+	margin-inline-start: 0px;
+
+	img {
+		border: 1px solid;
+	}
+}

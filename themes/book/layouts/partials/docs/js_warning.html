@@ -1,0 +1,64 @@
+<div id="js-warning">
+    <input type="checkbox" id="warning" checked>
+    <div class="modal">
+        <div class="modal__inner">
+        <h1>Warning</h1>
+        <p>Warning you have javascript enabled! Go to <a href="/bible/miscellaneous-information/javascript/">this page</a> to learn how to disable it.</p>
+        <label id="js-warning-close" for="warning">X</label>
+        </div>
+    </div>
+</div>
+
+<style>
+    #js-warning .modal {
+        align-items: center;
+        background-color: rgba(0,0,0,0.75);
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+    }
+    #js-warning .modal__inner {
+        background: white;
+        padding: 30px;
+        position: absolute;
+        color: black;
+    }
+    #js-warning label {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #js-warning input {
+        display: none;
+    }
+    #js-warning-close{
+        color: #fff;
+        text-align: center;
+    }
+    #js-warning input:checked + .modal {
+        opacity: 1;
+        visibility: visible;
+    }
+    #js-warning input:checked + .modal label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        background: #666666;
+    }
+    #js-warning input:checked + .modal label:hover {
+        background: #333333;
+    }
+</style>
+<noscript>
+	<style>
+		#js-warning {
+            display: none;
+        }
+	</style>
+</noscript>
